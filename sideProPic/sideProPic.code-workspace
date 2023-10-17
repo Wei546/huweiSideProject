@@ -1,0 +1,15 @@
+{
+  "folders": [
+	{
+		"name": "sideProPic",
+		"path": "../../../../Users/WEI/Desktop/sideProPic"
+	},
+	{
+		"name": "myProject",
+		"path": ".."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "sideProPic"
+  }
+}

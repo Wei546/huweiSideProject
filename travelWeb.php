@@ -70,8 +70,12 @@
         <img src="./sideProPic/麥寮鄉.jpg" alt="" />
       </section>
     </article>
-
-    <footer></footer>
+    <form action="./template.php" method="POST">
+      <footer>
+        <input type="text" name="response">
+        <button>submit</button>
+      </footer>
+    </form>
     <script src="./travelWeb.js"></script>
   </body>
 </html>
