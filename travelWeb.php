@@ -28,9 +28,13 @@
           <li><i class="fa-solid fa-user"></i></li>
           <li><i class="fa-solid fa-circle-info"></i></li>
           <li><i class="fa-solid fa-circle-question"></i></li>
-        </ul>
+        </ul> 
       </nav>
     </header>
+    <div class="searchBar">
+      <i class="fa-solid fa-circle-xmark"></i>
+      <input type="text">
+    </div>
     <aside>
       <ul>
         <li>虎尾鎮</li>
@@ -38,6 +42,7 @@
         <li>虎尾鎮</li>
       </ul>
     </aside>
+    <form action="./template.php" method="POST" name="regionIntro">
     <article>
       <section id="sec1">
         <img src="./sideProPic/二崙鄉.jpg" alt="" />
@@ -70,10 +75,14 @@
         <img src="./sideProPic/麥寮鄉.jpg" alt="" />
       </section>
     </article>
+    </form>
+    <hr>
     <form action="./template.php" method="POST">
       <footer>
-        <input type="text" name="response">
-        <button>submit</button>
+          <textarea name="response" id="" cols="30" rows="10"></textarea>
+          <div>
+            <button>submit</button>
+          </div>    
       </footer>
     </form>
     <script src="./travelWeb.js"></script>

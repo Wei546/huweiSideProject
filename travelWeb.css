@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 header {
   background-color: green;
@@ -18,13 +19,21 @@ header nav ul {
   display: flex;
   padding: 0%;
 }
-
+.searchBar {
+  position: relative;
+  top: 0%;
+  display: none;
+}
+.fa-circle-xmark {
+  cursor: pointer;
+}
 aside {
   width: 20%;
   height: 100vh;
   background-color: red;
   float: left;
   position: absolute;
+  left: -20%;
   font-size: 0.5em;
 }
 aside ul li {
@@ -32,53 +41,50 @@ aside ul li {
 }
 article section {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 #sec1 img {
   width: 25%;
-  margin-bottom: 2px;
+  margin-bottom: 0.1%;
+  margin-left: 0.1%;
   cursor: pointer;
 }
 #sec2 img {
   width: 25%;
-
-  margin-bottom: 2px;
+  margin-left: 0.1%;
+  margin-bottom: 0.1%;
   cursor: pointer;
 }
 #sec3 img {
   width: 25%;
-
-  margin-bottom: 2px;
+  margin-left: 0.1%;
+  margin-bottom: 0.1%;
   cursor: pointer;
 }
 #sec4 img {
   width: 25%;
-
-  margin-bottom: 2px;
+  margin-left: 0.1%;
+  margin-bottom: 0.1%;
   cursor: pointer;
 }
 #sec5 img {
   width: 25%;
-
+  margin-left: 0.1%;
   cursor: pointer;
 }
 article img:hover {
   opacity: 0.6;
 }
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 @keyframes slideRight {
   0% {
-    transform: translateX(5%);
+    transform: translateX(20%);
     background-color: antiquewhite;
-  }
-
-  33% {
-    transform: translateX(30%);
-    background-color: aqua;
-  }
-  66% {
-    transform: translateX(40%);
-    background-color: aquamarine;
   }
   100% {
     transform: translateX(80%);
@@ -88,20 +94,11 @@ article img:hover {
 
 @keyframes slideLeft {
   0% {
-    transform: translateX(40%);
+    transform: translateX(80%);
     background-color: antiquewhite;
   }
-
-  33% {
-    transform: translateX(20%);
-    background-color: aqua;
-  }
-  66% {
-    transform: translateX(10%);
-    background-color: aquamarine;
-  }
   100% {
-    transform: translateX(-5%);
+    transform: translateX(-20%);
     background-color: azure;
   }
 }
@@ -116,14 +113,11 @@ article img:hover {
   }
 }
 @keyframes rotate_0 {
-  33% {
-    transform: rotate(0deg);
-  }
-
-  66% {
+  50% {
     transform: rotate(90deg);
   }
+
   100% {
-    transform: rotate(0deg);
+    transform: rotate(180deg);
   }
 }
